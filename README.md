@@ -1,1 +1,79 @@
 # ecommerce-classification
+
+## Overview
+This project focuses on classifying ecommerce products using machine learning techniques. It leverages Jupyter Notebooks for data analysis and model training, Python for scripting, and Docker for containerization.
+
+## Repository Structure
+- **Notebook**: Contains Jupyter Notebook for POC, data analysis and model training.
+- **Scripts**: Python scripts for data preprocessing, model evaluation, training and Inference.
+- **Dockerfile**: Configuration to containerize the application.
+
+## Languages Used
+- **Jupyter Notebook**: 93.5%
+- **Python**: 6.4%
+- **Dockerfile**: 0.1%
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sachink1729/ecommerce-classification.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install --no-cache-dir -r requirements.txt
+   ```
+
+## Run
+1. Navigate to the repository directory:
+   ```bash
+   cd ecommerce-classification
+   ```
+2. Run the Docker container:
+   ```bash
+   docker build -t ecommerce-classification .
+   ```
+
+## Usage
+1. Run the Docker container:
+   ```bash
+   docker run -p 8000:8000 ecommerce-classification
+   ```
+
+   OR
+
+2. Run locally
+   ```bash
+   python ./ecommerce-classification/main.py
+   ```
+
+## Evaluation and Run Screenshots
+1. Model Evaluation
+![](https://github.com/sachink1729/ecommerce-classification/screenshots/test_eval_result.png)
+
+2. Swagger UI 
+![](https://github.com/sachink1729/ecommerce-classification/screenshots/swagger api ui.png)
+
+2. Run query from Swagger UI
+Result:
+```json
+    {
+    "text": "iphone 16",
+    "prediction": "Electronics"
+    }
+```
+![](https://github.com/sachink1729/ecommerce-classification/screenshots/run query from swagger.png)
+
+
+## Reference
+- [Jupyter Notebook](https://github.com/sachink1729/ecommerce-classification/src/abinbev_assignment_classification_colab.ipynb)
+- [Python](https://github.com/sachink1729/ecommerce-classification/src/data_pipeline.py)
+- [Python](https://github.com/sachink1729/ecommerce-classification/src/inference.py)
+- [Python](https://github.com/sachink1729/ecommerce-classification/src/modelling_and_train.py)
+- [Dockerfile](https://github.com/sachink1729/ecommerce-classification/blob/main/Dockerfile)
+
+## Contributing
+Contribute to this project by sending pull requests.
+
+## License
+MIT License
