@@ -50,7 +50,7 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
 ## Evaluation and Run Screenshots
 1. Model Evaluation
 Trained the Model for 1 epoch with the following parameters:
-```json
+```bash
 {
  learning_rate=2e-5,
  per_device_train_batch_size=32,
