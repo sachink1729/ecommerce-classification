@@ -66,10 +66,10 @@ Result:
 
 
 ## Reference
-- [Jupyter Notebook](https://github.com/sachink1729/ecommerce-classification/src/abinbev_assignment_classification_colab.ipynb)
-- [Python](https://github.com/sachink1729/ecommerce-classification/src/data_pipeline.py)
-- [Python](https://github.com/sachink1729/ecommerce-classification/src/inference.py)
-- [Python](https://github.com/sachink1729/ecommerce-classification/src/modelling_and_train.py)
+- [Jupyter Notebook](https://github.com/sachink1729/ecommerce-classification/blob/main/src/abinbev_assignment_classification_colab.ipynb)
+- [Python](https://github.com/sachink1729/ecommerce-classification/blob/main/src/data_pipeline.py)
+- [Python](https://github.com/sachink1729/ecommerce-classification/blob/main/src/inference.py)
+- [Python](https://github.com/sachink1729/ecommerce-classification/blob/main/src/modelling_and_train.py)
 - [Dockerfile](https://github.com/sachink1729/ecommerce-classification/blob/main/Dockerfile)
 
 ## Contributing
