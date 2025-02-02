@@ -51,7 +51,7 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
 1. Model Evaluation
 Trained the Model for 1 epoch with the following parameters:
 ```json
-{ report_to="none",
+{
  learning_rate=2e-5,
  per_device_train_batch_size=32,
  per_device_eval_batch_size=32,
@@ -61,7 +61,8 @@ Trained the Model for 1 epoch with the following parameters:
  save_strategy="steps",
  eval_steps=100,
  save_steps=100,
- logging_steps=10,}
+ logging_steps=10
+}
 ```
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/test_eval_result.png)
 
