@@ -41,8 +41,10 @@ class TextClassificationDataPipeline:
         dataset = load_dataset('csv', data_files=self.file_path, column_names=self.columns)
         df = dataset['train'].to_pandas()
 
-        # Clean data
+        # drop rows containing missing values and duplicates
         df = df.dropna().drop_duplicates()
+
+        # map labels to integers
         df["label"] = [self.label_mapping[label] for label in df["label"]]
 
         # Split data
@@ -55,7 +57,7 @@ class TextClassificationDataPipeline:
         # Print dataset sizes
         print(f"Train size after preprocessing: {len(train_dataset)}, Test size after preprocessing: {len(test_dataset)}")
 
-        # Preprocess datasets
+        # Tokenize datasets
         tokenized_train_dataset = train_dataset.map(self.tokenize_function, batched=True)
         tokenized_test_dataset = test_dataset.map(self.tokenize_function, batched=True)
 
