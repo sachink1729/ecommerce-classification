@@ -71,13 +71,14 @@ Trained the Model for 1 epoch with the following parameters:
  logging_steps=10
 }
 ```
+Accuracy: 95%
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/test_eval_result.png)
 
-3. Swagger UI
+2. Swagger UI
 Access at: /swagger
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/swagger%20api%20ui.png)
 
-2. Run query from Swagger UI
+3. Run query from Swagger UI
 Result:
 ```json
  {
