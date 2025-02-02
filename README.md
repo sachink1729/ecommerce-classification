@@ -36,7 +36,7 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
    ```bash
    cd ecommerce-classification
    ```
-2. Run the Docker container:
+2. Build the Docker container:
    ```bash
    docker build -t ecommerce-classification .
    ```
