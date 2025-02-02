@@ -49,9 +49,22 @@ This project focuses on classifying ecommerce products using machine learning te
 
 ## Evaluation and Run Screenshots
 1. Model Evaluation
+   Trained the Model for 1 epoch with the following parameters:
+   ```json
+   { report_to="none",
+    learning_rate=2e-5,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=32,
+    num_train_epochs=1,
+    weight_decay=0.01,
+    eval_strategy="steps",
+    save_strategy="steps",
+    eval_steps=100,
+    save_steps=100,
+    logging_steps=10,} ```
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/test_eval_result.png)
 
-2. Swagger UI 
+3. Swagger UI 
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/swagger%20api%20ui.png)
 
 2. Run query from Swagger UI
