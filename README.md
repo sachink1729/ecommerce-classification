@@ -49,10 +49,10 @@ This project focuses on classifying ecommerce products using machine learning te
 
 ## Evaluation and Run Screenshots
 1. Model Evaluation
-![](https://github.com/sachink1729/ecommerce-classification/screenshots/test_eval_result.png)
+![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/test_eval_result.png)
 
 2. Swagger UI 
-![](https://github.com/sachink1729/ecommerce-classification/screenshots/swagger api ui.png)
+![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/swagger%20api%20ui.png)
 
 2. Run query from Swagger UI
 Result:
@@ -62,7 +62,7 @@ Result:
     "prediction": "Electronics"
     }
 ```
-![](https://github.com/sachink1729/ecommerce-classification/screenshots/run query from swagger.png)
+![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/run%20query%20from%20swagger.png)
 
 
 ## Reference
