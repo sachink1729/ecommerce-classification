@@ -1,4 +1,4 @@
-# ecommerce-classification
+# eCommerce-classification 👖👕🤳📱👞
 
 ## Overview
 This project focuses on classifying e-commerce products using [Distilbert Model](https://huggingface.co/distilbert/distilbert-base-uncased). It leverages Python 3.11, Huggingface's Transformers library, and Pytorch.
@@ -7,6 +7,13 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
 - **Notebook**: Contains Jupyter Notebook for POC, data analysis, and model training.
 - **Scripts**: Python scripts for data preprocessing, model evaluation, training, and inference.
 - **Dockerfile**: Configuration to containerize the application.
+
+## Reference and File Access
+- [Jupyter Notebook used for POC](https://github.com/sachink1729/ecommerce-classification/blob/main/src/abinbev_assignment_classification_colab.ipynb)
+- [Python script for data pipeline](https://github.com/sachink1729/ecommerce-classification/blob/main/src/data_pipeline.py)
+- [Python script for inference](https://github.com/sachink1729/ecommerce-classification/blob/main/src/inference.py)
+- [Python script for modeling and training](https://github.com/sachink1729/ecommerce-classification/blob/main/src/modelling_and_train.py)
+- [Dockerfile](https://github.com/sachink1729/ecommerce-classification/blob/main/Dockerfile)
 
 ## Languages Used
 - **Jupyter Notebook**: 93.5%
@@ -80,13 +87,6 @@ Result:
 ```
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/run%20query%20from%20swagger.png)
 
-
-## Reference and File Access
-- [Jupyter Notebook used for POC](https://github.com/sachink1729/ecommerce-classification/blob/main/src/abinbev_assignment_classification_colab.ipynb)
-- [Python script for data pipeline](https://github.com/sachink1729/ecommerce-classification/blob/main/src/data_pipeline.py)
-- [Python script for inference](https://github.com/sachink1729/ecommerce-classification/blob/main/src/inference.py)
-- [Python script for modeling and training](https://github.com/sachink1729/ecommerce-classification/blob/main/src/modelling_and_train.py)
-- [Dockerfile](https://github.com/sachink1729/ecommerce-classification/blob/main/Dockerfile)
 
 ## Contributing
 Contribute to this project by sending pull requests.
