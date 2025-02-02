@@ -23,7 +23,6 @@ class TextClassifierInference:
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
-    @staticmethod
     def clean_text(self, text: str) -> str:
         """
         Clean the input text by removing punctuation and stopwords.
@@ -55,7 +54,7 @@ class TextClassifierInference:
             raise ValueError("Input text cannot be empty")
 
         # Tokenize input text
-        inputs = self.tokenizer(self.clean_text(text), return_tensors="pt")
+        inputs = self.tokenizer(self.clean_text(text=text), return_tensors="pt")
 
         # Perform inference without computing gradients
         with torch.no_grad():
