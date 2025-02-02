@@ -81,11 +81,11 @@ Result:
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/run%20query%20from%20swagger.png)
 
 
-## Reference and File access
+## Reference and File Access
 - [Jupyter Notebook used for POC](https://github.com/sachink1729/ecommerce-classification/blob/main/src/abinbev_assignment_classification_colab.ipynb)
 - [Python script for data pipeline](https://github.com/sachink1729/ecommerce-classification/blob/main/src/data_pipeline.py)
 - [Python script for inference](https://github.com/sachink1729/ecommerce-classification/blob/main/src/inference.py)
-- [Python script for modelling and training](https://github.com/sachink1729/ecommerce-classification/blob/main/src/modelling_and_train.py)
+- [Python script for modeling and training](https://github.com/sachink1729/ecommerce-classification/blob/main/src/modelling_and_train.py)
 - [Dockerfile](https://github.com/sachink1729/ecommerce-classification/blob/main/Dockerfile)
 
 ## Contributing
