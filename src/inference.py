@@ -16,12 +16,15 @@ class TextClassifierInference:
         Args:
             model_path (str): The path to the pre-trained model.
         """
+        if not model_path:
+            raise ValueError("Model path cannot be empty")
+
         self.stop_words = set(stopwords.words('english'))
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     @staticmethod
-    def clean_text(text: str) -> str:
+    def clean_text(self, text: str) -> str:
         """
         Clean the input text by removing punctuation and stopwords.
 
@@ -31,6 +34,9 @@ class TextClassifierInference:
         Returns:
             str: The cleaned text.
         """
+        if not text:
+            raise ValueError("Input text cannot be empty")
+
         text = text.translate(str.maketrans('', '', string.punctuation))
         text = " ".join([word for word in text.split() if word.lower() not in self.stop_words])
         return text
@@ -45,6 +51,9 @@ class TextClassifierInference:
         Returns:
             str: The predicted label.
         """
+        if not text:
+            raise ValueError("Input text cannot be empty")
+
         # Tokenize input text
         inputs = self.tokenizer(self.clean_text(text), return_tensors="pt")
 
