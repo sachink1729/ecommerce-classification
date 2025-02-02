@@ -71,7 +71,7 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
 Result:
 ```json
     {
-    "text": "iphone 16",
+    "text": "iPhone 16",
     "prediction": "Electronics"
     }
 ```
