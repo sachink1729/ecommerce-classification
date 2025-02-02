@@ -1,7 +1,7 @@
 # ecommerce-classification
 
 ## Overview
-This project focuses on classifying ecommerce products using machine learning techniques. It leverages Jupyter Notebooks for data analysis and model training, Python for scripting, and Docker for containerization.
+This project focuses on classifying e-commerce products using ![Distilbert](https://huggingface.co/distilbert/distilbert-base-uncased) Model. It leverages Jupyter Notebooks for data analysis and model training, Python for scripting, and Docker for containerization.
 
 ## Repository Structure
 - **Notebook**: Contains Jupyter Notebook for POC, data analysis and model training.
