@@ -51,7 +51,7 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
 
 2. Run locally
    ```bash
-   python ./ecommerce-classification/main.py
+   python ./main.py
    ```
 
 ## Evaluation and Run Screenshots
