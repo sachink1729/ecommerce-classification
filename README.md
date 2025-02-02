@@ -1,11 +1,11 @@
 # ecommerce-classification
 
 ## Overview
-This project focuses on classifying e-commerce products using [Distilbert Model](https://huggingface.co/distilbert/distilbert-base-uncased). It leverages Python 3.11, Huggingface, Pytorch.
+This project focuses on classifying e-commerce products using [Distilbert Model](https://huggingface.co/distilbert/distilbert-base-uncased). It leverages Python 3.11, Huggingface's Transformers library, and Pytorch.
 
 ## Repository Structure
-- **Notebook**: Contains Jupyter Notebook for POC, data analysis and model training.
-- **Scripts**: Python scripts for data preprocessing, model evaluation, training and Inference.
+- **Notebook**: Contains Jupyter Notebook for POC, data analysis, and model training.
+- **Scripts**: Python scripts for data preprocessing, model evaluation, training, and inference.
 - **Dockerfile**: Configuration to containerize the application.
 
 ## Languages Used
@@ -49,31 +49,33 @@ This project focuses on classifying e-commerce products using [Distilbert Model]
 
 ## Evaluation and Run Screenshots
 1. Model Evaluation
-   Trained the Model for 1 epoch with the following parameters:
-   ```json
-   { report_to="none",
-    learning_rate=2e-5,
-    per_device_train_batch_size=32,
-    per_device_eval_batch_size=32,
-    num_train_epochs=1,
-    weight_decay=0.01,
-    eval_strategy="steps",
-    save_strategy="steps",
-    eval_steps=100,
-    save_steps=100,
-    logging_steps=10,} ```
+Trained the Model for 1 epoch with the following parameters:
+```json
+{ report_to="none",
+ learning_rate=2e-5,
+ per_device_train_batch_size=32,
+ per_device_eval_batch_size=32,
+ num_train_epochs=1,
+ weight_decay=0.01,
+ eval_strategy="steps",
+ save_strategy="steps",
+ eval_steps=100,
+ save_steps=100,
+ logging_steps=10,}
+```
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/test_eval_result.png)
 
-3. Swagger UI 
+3. Swagger UI
+Access at: /swagger
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/swagger%20api%20ui.png)
 
 2. Run query from Swagger UI
 Result:
 ```json
-    {
-    "text": "iPhone 16",
-    "prediction": "Electronics"
-    }
+ {
+ "text": "iPhone 16",
+ "prediction": "Electronics"
+ }
 ```
 ![](https://github.com/sachink1729/ecommerce-classification/blob/main/screenshots/run%20query%20from%20swagger.png)
 
